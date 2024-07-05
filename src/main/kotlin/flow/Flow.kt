@@ -1,5 +1,5 @@
 package flow
 
-interface Flow {
-    suspend fun collect(flowCollector: FlowCollector)
+interface Flow<T> {
+    suspend fun collect(flowCollector: FlowCollector<T>)
 }

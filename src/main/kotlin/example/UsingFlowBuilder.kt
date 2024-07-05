@@ -4,10 +4,10 @@ import flow.Flow
 import flow.flow
 
 suspend fun main() {
-    val flow: Flow = flow {
-        emit(1)
-        emit(2)
-        emit(3)
+    val flow: Flow<String> = flow {
+        emit("반")
+        emit("달")
+        emit("벨로그")
     }
 
     flow.collect { print(it) }
@@ -15,5 +15,5 @@ suspend fun main() {
     flow.collect { print(it) }
 }
 
-// 123
-// 123
+// 반달벨로그
+// 반달벨로그

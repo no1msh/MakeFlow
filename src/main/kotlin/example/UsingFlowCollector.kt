@@ -3,7 +3,7 @@ package example
 import flow.FlowCollector
 
 suspend fun main() {
-    val lambdaHasFlowCollector: suspend (FlowCollector) -> Unit = {
+    val lambdaHasFlowCollector: suspend (FlowCollector<Int>) -> Unit = {
         it.emit(1)
         it.emit(2)
         it.emit(3)
