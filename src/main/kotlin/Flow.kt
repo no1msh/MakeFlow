@@ -1,3 +1,3 @@
 interface Flow {
-    suspend fun collect(collector: FlowCollector)
+    suspend fun collect(flowCollector: FlowCollector)
 }
