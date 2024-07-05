@@ -1,3 +1,5 @@
+package example
+
 fun main() {
     val lambda: () -> Unit = {
         print(1)

@@ -1,3 +1,8 @@
+package example
+
+import flow.Flow
+import flow.FlowCollector
+
 suspend fun main() {
     val builder: suspend FlowCollector.() -> Unit = {
         emit(1)

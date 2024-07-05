@@ -1,3 +1,5 @@
+package example
+
 import kotlinx.coroutines.delay
 
 suspend fun main() {

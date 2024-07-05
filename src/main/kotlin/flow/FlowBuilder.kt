@@ -1,3 +1,5 @@
+package flow
+
 fun flow(
     builder: suspend FlowCollector.() -> Unit
 ): Flow = object : Flow {

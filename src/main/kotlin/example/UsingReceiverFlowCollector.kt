@@ -1,3 +1,7 @@
+package example
+
+import flow.FlowCollector
+
 suspend fun main() {
     val lambdaHasFlowCollector: suspend FlowCollector.() -> Unit = {
         emit(1)
