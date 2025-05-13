@@ -14,6 +14,12 @@ public fun <T> Iterator<T>.asFlow(): Flow<T> = flow {
     }
 }
 
+public fun <T> Iterable<T>.asFlow(): Flow<T> = flow {
+    forEach { value ->
+        emit(value)
+    }
+}
+
 public fun <T> Sequence<T>.asFlow(): Flow<T> = flow {
     forEach { value ->
         emit(value)
