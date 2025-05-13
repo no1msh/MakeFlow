@@ -7,3 +7,21 @@ fun <T> flow(
         flowCollector.builder()
     }
 }
+
+public fun <T> Iterator<T>.asFlow(): Flow<T> = flow {
+    forEach { value ->
+        emit(value)
+    }
+}
+
+public fun <T> Sequence<T>.asFlow(): Flow<T> = flow {
+    forEach { value ->
+        emit(value)
+    }
+}
+
+public fun <T> flowOf(vararg elements: T): Flow<T> = flow {
+    for (element in elements) {
+        emit(element)
+    }
+}
