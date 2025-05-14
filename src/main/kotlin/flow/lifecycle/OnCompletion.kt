@@ -9,7 +9,7 @@ fun <T> Flow<T>.onCompletion(
 ): Flow<T> = flow {
     var cause: Throwable? = null
     try {
-        collect(this)
+        this@onCompletion.collect(this@flow)
     } catch (e: Throwable) {
         cause = e
         throw e
