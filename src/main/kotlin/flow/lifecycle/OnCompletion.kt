@@ -14,6 +14,6 @@ fun <T> Flow<T>.onCompletion(
         cause = e
         throw e
     } finally {
-        with(this@flow) { action(cause) }
+        this@flow.action(cause)
     }
 }
