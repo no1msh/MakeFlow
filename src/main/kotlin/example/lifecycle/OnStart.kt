@@ -8,6 +8,6 @@ import kotlinx.coroutines.delay
 suspend fun main() {
     flowOf(1, 2)
         .onEach { delay(1000) }
-        .onStart { println("Start") }
+        .onStart { emit(0) }
         .collect { println(it) }
 }
