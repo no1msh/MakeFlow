@@ -1,6 +1,6 @@
 package example.operator
 
-import flow.flowOf
+import flow.builder.flowOf
 import flow.operator.distinctUntilChanged
 
 

@@ -1,6 +1,6 @@
 package example.lifecycle
 
-import flow.flowOf
+import flow.builder.flowOf
 import flow.lifecycle.onEach
 
 

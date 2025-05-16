@@ -1,4 +1,4 @@
-package example.lifecycle
+package example.operator
 
 import kotlinx.coroutines.CoroutineName
 import kotlinx.coroutines.flow.Flow

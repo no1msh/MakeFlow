@@ -1,6 +1,6 @@
 package example.operator
 
-import flow.flowOf
+import flow.builder.flowOf
 import flow.lifecycle.onEach
 import flow.operator.scan
 import kotlinx.coroutines.delay

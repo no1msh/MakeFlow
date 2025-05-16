@@ -1,8 +1,8 @@
 package flow.lifecycle
 
-import flow.Flow
-import flow.FlowCollector
-import flow.flow
+import flow.builder.Flow
+import flow.builder.FlowCollector
+import flow.builder.flow
 import kotlin.coroutines.cancellation.CancellationException
 
 fun <T> Flow<T>.catch(

@@ -1,6 +1,6 @@
 package flow.lifecycle
 
-import flow.Flow
+import flow.builder.Flow
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch

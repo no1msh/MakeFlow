@@ -1,7 +1,7 @@
 package flow.lifecycle
 
-import flow.Flow
-import flow.flow
+import flow.builder.Flow
+import flow.builder.flow
 
 fun <T> Flow<T>.onEach(
     action: suspend (T) -> Unit

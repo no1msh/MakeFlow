@@ -1,4 +1,4 @@
-package example
+package example.builder
 
 suspend fun main() {
     val lambdaHasLambda: suspend ((Int) -> Unit) -> Unit = { emit ->

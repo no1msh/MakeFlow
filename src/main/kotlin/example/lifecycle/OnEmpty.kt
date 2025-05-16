@@ -1,6 +1,6 @@
 package example.lifecycle
 
-import flow.flow
+import flow.builder.flow
 import flow.lifecycle.onEmpty
 import kotlinx.coroutines.delay
 

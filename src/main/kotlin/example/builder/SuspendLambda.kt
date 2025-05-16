@@ -1,4 +1,4 @@
-package example
+package example.builder
 
 import kotlinx.coroutines.delay
 

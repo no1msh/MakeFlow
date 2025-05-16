@@ -1,7 +1,7 @@
-package example
+package example.builder
 
-import flow.Flow
-import flow.flow
+import flow.builder.Flow
+import flow.builder.flow
 
 suspend fun main() {
     val flow: Flow<String> = flow {

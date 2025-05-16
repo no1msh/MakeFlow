@@ -1,4 +1,4 @@
-package example
+package example.builder
 
 fun main() {
     val lambda: () -> Unit = {

@@ -1,6 +1,6 @@
 package flow.operator
 
-import flow.Flow
+import flow.builder.Flow
 
 
 fun <T> Flow<T>.retry(

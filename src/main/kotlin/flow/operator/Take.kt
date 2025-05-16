@@ -1,7 +1,7 @@
 package flow.operator
 
-import flow.Flow
-import flow.flow
+import flow.builder.Flow
+import flow.builder.flow
 import kotlin.coroutines.cancellation.CancellationException
 
 fun <T> Flow<T>.take(count: Int): Flow<T> = flow {

@@ -1,6 +1,6 @@
 package example.operator
 
-import flow.flow
+import flow.builder.flow
 import flow.operator.retry
 
 

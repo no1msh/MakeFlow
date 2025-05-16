@@ -1,6 +1,6 @@
-package example
+package example.builder
 
-import flow.FlowCollector
+import flow.builder.FlowCollector
 
 suspend fun main() {
     val lambdaHasFlowCollector: suspend FlowCollector<Int>.() -> Unit = {

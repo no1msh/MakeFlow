@@ -1,4 +1,4 @@
-package flow
+package flow.builder
 
 fun <T> flow(
     builder: suspend FlowCollector<T>.() -> Unit

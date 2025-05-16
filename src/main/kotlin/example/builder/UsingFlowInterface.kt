@@ -1,7 +1,7 @@
-package example
+package example.builder
 
-import flow.Flow
-import flow.FlowCollector
+import flow.builder.Flow
+import flow.builder.FlowCollector
 
 suspend fun main() {
     val builder: suspend FlowCollector<Int>.() -> Unit = {

@@ -1,7 +1,7 @@
 package flow.operator
 
-import flow.Flow
-import flow.flow
+import flow.builder.Flow
+import flow.builder.flow
 
 fun <T> Flow<T>.drop(count: Int): Flow<T> = flow {
     var skipped = 0

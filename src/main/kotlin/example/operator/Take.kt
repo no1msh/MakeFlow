@@ -1,6 +1,6 @@
 package example.operator
 
-import flow.asFlow
+import flow.builder.asFlow
 import flow.operator.take
 
 suspend fun main() {
