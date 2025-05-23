@@ -7,6 +7,7 @@
 해당
 레포지토리는 [Kotlin Flow 만들면서 이해하기](https://velog.io/@no1msh1217/series/Kotlin-Flow-%EB%A7%8C%EB%93%A4%EB%A9%B4%EC%84%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)
 포스팅 시리즈를 진행하면서 사용된 코드들을 저장한 곳입니다.
+(**사용을 위한 목적이 아닌 학습용 코드임을 알립니다.**)
 
 이 포스팅 시리즈를 따라가면서 [바퀴를 재발명](https://en.wikipedia.org/wiki/Reinventing_the_wheel)하며 `Flow`에 익숙하지 않은 분들이 직접 만들어 보며 이해하는 경험을
 할 수 있습니다.
@@ -14,7 +15,7 @@
 > **완전히 실제 코드와 똑같이 구현하는 것이 아닌 주 기능을 간략화** 해서 구현합니다.
 > 따라서 실제 코드가 궁금하신 분들은 [Kotlin Coroutine 레포지토리](https://github.com/Kotlin/kotlinx.coroutines)를 참고하시기 바랍니다.
 
-## 목차 (진행중)
+## 목차
 
 #### [Part 1. Flow 빌더](https://velog.io/@no1msh1217/Kotlin-Flow-%EB%A7%8C%EB%93%A4%EB%A9%B4%EC%84%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-Part-1.-Flow-%EB%B9%8C%EB%8D%94)
 
@@ -29,3 +30,21 @@
 
 - `Flow`의 생명 주기함수를 제외한 중간연산 함수를 만들어봅니다.
 - `Flow`에 집중하기 위해 내부적으로 `channelFlow`를 사용한 함수는 제외하였습니다.
+
+#### [Part 4. Flow 최종 연산](https://velog.io/@no1msh1217/flow-%EC%B5%9C%EC%A2%85%EC%97%B0%EC%82%B0)
+
+- `Flow`의 최종연산들을 살펴보고 만들어 봅니다.
+- 중간연산과 마찬가지로 내부적으로 `channelFlow`를 사용한 함수는 제외하였습니다.
+
+## 추후 계획
+
+### 기능 구현
+
+- `Channel`
+- `ChannelFlow`, `CallbackFlow`
+- `StateFlow`, `SharedFlow`
+
+### 유지 보수
+
+- 중복 로직 함수화
+- `CancellationException`을 `CustomException`으로 대체
